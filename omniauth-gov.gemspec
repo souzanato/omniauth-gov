@@ -4,8 +4,8 @@ require File.expand_path('../lib/omniauth-gov/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Jonas Ricardo", "Renato de Souza"]
   gem.email         = ["jonas.campos@yahoo.com.br", "renatocdesouza@gmail.com"]
-  gem.description   = %q{Official OmniAuth strategy for GitHub.}
-  gem.summary       = %q{Official OmniAuth strategy for GitHub.}
+  gem.description   = %q{OmniAuth strategy for Gov.br (login.gov.br / govbr).}
+  gem.summary       = %q{OmniAuth strategy for Gov.br (login.gov.br / govbr).}
   gem.homepage      = "https://github.com/jonasrscampos/omniauth-gov"
   gem.license       = "MIT"
 
@@ -16,8 +16,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::Gov::VERSION
 
-  gem.add_dependency 'omniauth', '1.9.1' 
-  gem.add_dependency 'omniauth-oauth2'
+  gem.add_dependency 'omniauth', '>= 1.9.1, < 3.0'
+  gem.add_dependency 'omniauth-oauth2', '>= 1.7'
   gem.add_development_dependency 'rspec', '~> 3.5'
   gem.add_development_dependency 'faraday', '~> 2.9'
   gem.add_development_dependency 'rack-test'
